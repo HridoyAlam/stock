@@ -16,5 +16,10 @@ def home(request):
 def about(request):
     return render(request, "about.html", {})
 
+def test(request):
+    return render(request, "test.html", {})
+
 
 # pk_0f23852bc2214eecb55dea7c1ffb8cba 
+# aapl
+# TSLA

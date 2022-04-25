@@ -1,19 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>hello</h1>
+
 <br>
-<br>
+
 
 
 {% if api  %}
     {% if api == "...Error....." %}
         There was problem, please try again
     {% else %}
-        {% for key, value in api.items %}
+        <!-- {% for key, value in api.items %}
             {{ key }}: {{value}} <br>
-        {% endfor %}
+        {% endfor %} -->
 
+        <h1>{{api.companyName}}</h1><br>
+        Price: ${{ api.latestPrice }} <br>
+        Previous Close: {{ api.previousClose }} <br>
+        Makeket Cap: {{ api.marketCap }} <br>
+        YTD Change: {{ api.ytdChange }} <br>
+        52Wk High: {{ api.week52High }} <br>
+        52 WK Low: {{ api.week52Low }}
     {% endif %}
 {% endif %}
 
