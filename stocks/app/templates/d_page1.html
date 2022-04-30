@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Page 1 </h2>
+    <hr/>
+
+    <form action="{% url 'page2' %} method="POST">
+        <select name="model" id="">
+            <option disabled='true' selected>Select Model</option>
+            <option value="">Alpa</option>
+            <option value="">Beta</option>
+            <option value="">Gamma</option>
+            <option value="">TIER</option>
+        </select>
+        <input type="submit" value="click">
+    </form>
+
+ 
+
+{% endblock %}

@@ -15,6 +15,10 @@
           <a class="nav-link" href="{% url 'about' %}">About</a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'name' %}">NAME</a>
+        </li>
+
       </ul>
       <form action="{% url 'home' %}"  class="form-inline my-2 my-lg-0" method="POST">
         {% csrf_token %}
